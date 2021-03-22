@@ -1,0 +1,238 @@
+************ USE OF ESRL GMD DATA ****************
+ 
+These data are made freely available to the public and the
+scientific community in the belief that their wide dissemination
+will lead to greater understanding and new scientific insights.
+The availability of these data does not constitute publication
+of the data.  We rely on the ethics and integrity of the user to
+assure that GMD receives fair credit for our work.  If the data
+are obtained for potential use in a publication or presentation,
+GMD should be informed at the outset of the nature of this work.
+If the GMD data are essential to the work, or if an important
+result or conclusion depends on the GMD data, co-authorship may
+be appropriate.  This should be discussed at an early stage in
+the work.  Manuscripts using the GMD data should be sent to GMD
+for review before they are submitted for publication so we can
+insure that the quality and limitations of the data are accurately
+represented. 
+
+Contact:   Paul Novelli (303 497 6974; paul.c.novelli@noaa.gov)
+
+File Creation:  Mon Nov 27 12:39:15 2006
+
+ **************** RECIPROCITY AGREEMENT ****************
+ 
+Use of these data implies an agreement to reciprocate.
+Laboratories making similar measurements agree to make their
+own data available to the general public and to the scientific
+community in an equally complete and easily accessible form.
+Modelers are encouraged to make available to the community,
+upon request, their own tools used in the interpretation
+of the GMD data, namely well documented model code, transport
+fields, and additional information necessary for other
+scientists to repeat the work and to run modified versions.
+Model availability includes collaborative support for new
+users of the models.
+ 
+***********************************************************
+ 
+ 
+ 
+BRW 1989  1   485.40
+BRW 1989  2   489.18
+BRW 1989  3   506.12
+BRW 1989  4   544.74
+BRW 1989  5   556.36
+BRW 1989  6   547.25
+BRW 1989  7   524.50
+BRW 1989  8   501.11
+BRW 1989  9   498.91
+BRW 1989 10   495.06
+BRW 1989 11   488.55
+BRW 1989 12   506.15
+BRW 1990  1   537.67
+BRW 1990  2   540.52
+BRW 1990  3   533.72
+BRW 1990  4   536.22
+BRW 1990  5   532.39
+BRW 1990  6   516.93
+BRW 1990  7   510.53
+BRW 1990  8   496.65
+BRW 1990  9   470.03
+BRW 1990 10   460.63
+BRW 1990 11   463.86
+BRW 1990 12   487.75
+BRW 1991  1   515.15
+BRW 1991  2   524.55
+BRW 1991  3   535.04
+BRW 1991  4   541.26
+BRW 1991  5   537.42
+BRW 1991  6   528.92
+BRW 1991  7   511.57
+BRW 1991  8   490.80
+BRW 1991  9   467.72
+BRW 1991 10   462.00
+BRW 1991 11   476.12
+BRW 1991 12   494.80
+BRW 1992  1   508.37
+BRW 1992  2   519.28
+BRW 1992  3   533.26
+BRW 1992  4   538.46
+BRW 1992  5   530.13
+BRW 1992  6   513.96
+BRW 1992  7   501.93
+BRW 1992  8   479.25
+BRW 1992  9   456.19
+BRW 1992 10   455.30
+BRW 1992 11   462.39
+BRW 1992 12   476.65
+BRW 1993  1   497.22
+BRW 1993  2   513.38
+BRW 1993  3   521.09
+BRW 1993  4   525.48
+BRW 1993  5   527.36
+BRW 1993  6   512.87
+BRW 1993  7   492.61
+BRW 1993  8   473.01
+BRW 1993  9   459.67
+BRW 1993 10   459.82
+BRW 1993 11   463.36
+BRW 1993 12   476.37
+BRW 1994  1   495.32
+BRW 1994  2   505.14
+BRW 1994  3   513.98
+BRW 1994  4   521.36
+BRW 1994  5   522.33
+BRW 1994  6   513.55
+BRW 1994  7   485.67
+BRW 1994  8   468.82
+BRW 1994  9   465.75
+BRW 1994 10   455.41
+BRW 1994 11   459.88
+BRW 1994 12   472.58
+BRW 1995  1   485.74
+BRW 1995  2   498.02
+BRW 1995  3   508.35
+BRW 1995  4   514.16
+BRW 1995  5   513.98
+BRW 1995  6   508.80
+BRW 1995  7   488.80
+BRW 1995  8   473.72
+BRW 1995  9   466.60
+BRW 1995 10   449.21
+BRW 1995 11   445.34
+BRW 1995 12   465.98
+BRW 1996  1   492.85
+BRW 1996  2   509.38
+BRW 1996  3   514.32
+BRW 1996  4   520.86
+BRW 1996  5   521.56
+BRW 1996  6   517.70
+BRW 1996  7   510.72
+BRW 1996  8   487.40
+BRW 1996  9   457.26
+BRW 1996 10   452.15
+BRW 1996 11   465.62
+BRW 1996 12   470.16
+BRW 1997  1   479.73
+BRW 1997  2   501.93
+BRW 1997  3   515.01
+BRW 1997  4   517.50
+BRW 1997  5   520.93
+BRW 1997  6   507.38
+BRW 1997  7   481.20
+BRW 1997  8   458.91
+BRW 1997  9   442.55
+BRW 1997 10   442.73
+BRW 1997 11   454.15
+BRW 1997 12   473.14
+BRW 1998  1   491.96
+BRW 1998  2   502.40
+BRW 1998  3   504.96
+BRW 1998  4   512.43
+BRW 1998  5   521.51
+BRW 1998  6   517.10
+BRW 1998  7   500.08
+BRW 1998  8   490.43
+BRW 1998  9   486.93
+BRW 1998 10   494.91
+BRW 1998 11   499.31
+BRW 1998 12   492.07
+BRW 1999  1   500.25
+BRW 1999  2   515.16
+BRW 1999  3   524.84
+BRW 1999  4   526.76
+BRW 1999  5   524.60
+BRW 1999  6   516.88
+BRW 1999  7   494.01
+BRW 1999  8   469.85
+BRW 1999  9   462.98
+BRW 1999 10   457.35
+BRW 1999 11   455.10
+BRW 1999 12   472.63
+BRW 2000  1   489.08
+BRW 2000  2   501.97
+BRW 2000  3   513.24
+BRW 2000  4   516.89
+BRW 2000  5   516.73
+BRW 2000  6   508.57
+BRW 2000  7   488.91
+BRW 2000  8   467.00
+BRW 2000  9   455.00
+BRW 2000 10   452.93
+BRW 2000 11   469.59
+BRW 2000 12   484.65
+BRW 2001  1   493.49
+BRW 2001  2   503.92
+BRW 2001  3   514.38
+BRW 2001  4   520.78
+BRW 2001  5   521.27
+BRW 2001  6   514.07
+BRW 2001  7   491.46
+BRW 2001  8   470.09
+BRW 2001  9   459.27
+BRW 2001 10   456.92
+BRW 2001 11   464.08
+BRW 2001 12   471.14
+BRW 2002  1   486.08
+BRW 2002  2   500.47
+BRW 2002  3   503.70
+BRW 2002  4   503.97
+BRW 2002  5   511.97
+BRW 2002  6   514.09
+BRW 2002  7   492.33
+BRW 2002  8   467.67
+BRW 2002  9   458.43
+BRW 2002 10   464.86
+BRW 2002 11   475.50
+BRW 2002 12   479.89
+BRW 2003  1   490.02
+BRW 2003  2   503.26
+BRW 2003  3   509.72
+BRW 2003  4   513.60
+BRW 2003  5   518.30
+BRW 2003  6   514.39
+BRW 2003  7   499.51
+BRW 2003  8   480.63
+BRW 2003  9   477.46
+BRW 2003 10   476.83
+BRW 2003 11   473.07
+BRW 2003 12   478.66
+BRW 2004  1   489.11
+BRW 2004  2   502.81
+BRW 2004  3   513.46
+BRW 2004  4   520.21
+BRW 2004  5   525.55
+BRW 2004  6   514.21
+BRW 2004  7   496.97
+BRW 2004  8   489.61
+BRW 2004  9   481.56
+BRW 2004 10   464.08
+BRW 2004 11   460.47
+BRW 2004 12   472.72
+BRW 2005  1   482.46
+BRW 2005  2   497.33
+BRW 2005  3   508.74
+BRW 2005  4   510.66
+BRW 2005  5   511.45
+BRW 2005  6   510.31

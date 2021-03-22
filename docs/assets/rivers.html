@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script><script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.css" rel="stylesheet"></link>
+    <title>Climate Crisis Dashboard - Rivers</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="dist/css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="../index.html">Climate Crisis</a>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">
+              <span data-feather="home"></span>
+              Dashboard Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="temps.html">
+              <span data-feather="thermometer"></span>
+              Temperature
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="storms.html">
+              <span data-feather="cloud-lightning"></span>
+              Storms
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rivers.html">
+              <span data-feather="chevrons-right"></span>
+              Rivers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lakes.html">
+              <span data-feather="droplet"></span>
+              Lakes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="greenhouse_gases.html">
+              <span data-feather="wind"></span>
+              Greenhouse Gases
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <form>
+              <select id="slim-select" class="info__select" onchange="updateMain(this.value, this.label)">
+                <option data-placeholder="true"></option>
+                <option value="charts/rivers/Brazos_Fig.png">Brazos River</option>
+                <option value="charts/rivers/Canadian_Fig.png">Canadian River</option>
+                <option value="charts/rivers/Colorado_Fig.png">Colorado River</option>
+                <option value="charts/rivers/Guadalupe_Fig.png">Guadalupe River</option>
+                <option value="charts/rivers/Neches_Fig.png">Neches River</option>
+                <option value="charts/rivers/Nueces_Fig.png">Nueces River</option>
+                <option value="charts/rivers/Pecos_Fig.png">Pecos River</option>
+                <option value="charts/rivers/Red_Fig.png">Red River</option>
+                <option value="charts/rivers/Sabine_Fig.png">Sabine River</option>
+                <option value="charts/rivers/San_Antonio_Fig.png">San Antonio River</option>
+                <option value="charts/rivers/San_Jacinto_Fig.png">San Jacinto River</option>
+                <option value="charts/rivers/Trinity_Fig.png">Trinity River</option>                
+              </select>
+            </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md"><center></center>
+          <a id="mainLink" href="charts/rivers/Brazos_Fig.png">
+          <img id="mainChart" src="charts/rivers/Brazos_Fig.png"  alt="Brazos River" class="rounded float-right" style="width:100%">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+          Although an exciting measure of climate stability and incredibly important for biodiversity and terrestrial growth, the river data collected was fractured across all sites. Two measures were used at two points of each river: gage height and discharge. Each of the rivers showed different trends at different points in time with different data consistency, so it is difficult to determine much definitively from the data. Even with these limitations, we can see that almost each river started to show periods of sharp spikes upward in gage height starting in 2015 and continuing to present day. This may suggest more sudden and heavy rainfall or flooding. From a purely visual perspective, there seems to be more variability in the most recent years, but this also may be due to the limitations of the data.
+        </div>
+      </div>
+
+      <h2>Individual River Charts</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4" id="thumbnail"><center>Brazos River</center>
+            <img src="charts/rivers/Brazos_Fig.png" alt="Brazos River Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4" id="thumbnail"><center>Canadian River</center>
+            <img src="charts/rivers/Canadian_Fig.png" alt="Canadian River Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4" id="thumbnail"><center>Colorado River</center>
+            <img src="charts/rivers/Colorado_Fig.png" alt=">Colorado River" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4" id="thumbnail"><center>Guadalupe River</center>
+            <img src="charts/rivers/Guadalupe_Fig.png" alt="Guadalupe River Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4" id="thumbnail"><center>Neches River</center>
+            <img src="charts/rivers/Neches_Fig.png" alt="Neches River Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4" id="thumbnail"><center>Nueces River</center>
+            <img src="charts/rivers/Nueces_Fig.png" alt="Nueces River Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-md-4" id="thumbnail"><center>Pecos River</center>
+              <img src="charts/rivers/Pecos_Fig.png" alt="Pecos River Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Red River</center>
+              <img src="charts/rivers/Red_Fig.png" alt="Red River Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Sabine River</center>
+              <img src="charts/rivers/Sabine_Fig.png" alt="Sabine River Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4" id="thumbnail"><center>San Antonio River</center>
+              <img src="charts/rivers/San_Antonio_Fig.png" alt="San Antonio River Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>San Jacinto River</center>
+              <img src="charts/rivers/San_Jacinto_Fig.png" alt="San Jacinto River Chart" onclick= "updateMain(src,alt)" lass="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Trinity River</center>
+              <img src="charts/rivers/Trinity_Fig.png" alt="Lake Palestine Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+        <script src="dist/js/dashboard.js"></script></body>
+</html>

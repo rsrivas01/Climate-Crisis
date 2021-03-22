@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.css" rel="stylesheet"></link>
+    <title>Climate Crisis Dashboard - Home</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="assets/dist/css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="index.html">Climate Crisis</a>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <span data-feather="home"></span>
+              Dashboard Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assets/temps.html">
+              <span data-feather="thermometer"></span>
+              Temperature
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assets/storms.html">
+              <span data-feather="cloud-lightning"></span>
+              Storms
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assets/rivers.html">
+              <span data-feather="chevrons-right"></span>
+              Rivers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assets/lakes.html">
+              <span data-feather="droplet"></span>
+              Lakes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="assets/greenhouse_gases.html">
+              <span data-feather="wind"></span>
+              Greenhouse Gases
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard Home</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+        </div>
+      </div>
+
+      <h2>Dataset Charts</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4"><center>Temperature</center>
+            <a href="assets/temps.html">
+              <img src="assets/charts/temps/Dallas_Fig.png" alt="Temperature Charts" class="rounded float-right" style="width:100%">
+            </a>
+          </div>
+          <div class="col-md-4"><center>Storms</center>
+            <a href="assets/storms.html">
+              <img src="assets/charts/storms/Thunderstorms_Fig.png" alt="Storm Charts" class="rounded float-right" style="width:100%">
+            </a>
+          </div>
+          <div class="col-md-4"><center>Rivers</center>
+            <a href="assets/rivers.html">
+              <img src="assets/charts/rivers/Trinity_Fig.png" alt="River Charts" class="rounded float-right" style="width:100%">
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"><center>Lakes</center>
+            <a href="assets/lakes.html">
+              <img src="assets/charts/lakes/Lakes_Fig.png" alt="Lake Charts" class="rounded float-right" style="width:100%">
+            </a>
+          </div>
+          <div class="col-md-4"><center></center>
+            <a href="">
+              <img src="" alt="" class="rounded float-right" style="width:100%">
+            </a>
+          </div>
+          <div class="col-md-4"><center>Greenhouse Gases</center>
+            <a href="assets/greenhouse_gases.html">
+              <img src="assets/charts/greenhouse_gases/stackedbarchart.png" alt="Greenhouse Gas Charts" class="rounded float-right" style="width:100%">
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+        <script src="assets/dist/js/dashboard.js"></script></body>
+</html>

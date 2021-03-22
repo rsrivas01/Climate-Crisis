@@ -1,0 +1,71 @@
+#
+#
+# US Geological Survey, Water Resources Data
+# retrieved: 2020-10-24 09:18:43 EDT      (sdww02)
+#
+# This file contains USGS Surface-Water Monthly Statistics
+#
+# Note:The statistics generated from  this site are based on approved daily-mean data and may not match those published by the USGS in official publications.
+# The user is responsible for assessment and use of statistics from this site.
+# For more details on why the statistics may not match, visit https://waterdata.usgs.gov/nwis/?dv_statistics_disclaimer.
+#
+# ** No Incomplete data have been used for statistical calculation
+#
+# This file includes the following columns:
+#
+#
+# agency_cd    agency code
+# site_no USGS site number
+# parameter_cd
+# ts_id
+# year_nu Calendar year for value
+# month_nu     Month for value
+# mean_va monthly-mean value.
+#         if there is not complete record
+#         for a month this field is blank
+#
+#
+# Sites in this file include:
+# USGS 08066190 Livingston Res nr Goodrich, TX
+# 
+# Explanation of Parameter Code and ts_id used in the Statistics Data 
+# parameter_cd	Parameter Name					ts_id	Location Name
+# 62614		Lake or reservoir water surface elevation above NGVD 1929, feet		133963	Transducer
+#
+#
+agency_cd	site_no	parameter_cd	ts_id	year_nu	month_nu	mean_va
+5s	15s	5s	3n	4s	2s	12n
+USGS	08066190	62614	133963	1999	10	130.08
+USGS	08066190	62614	133963	1999	11	130.066
+USGS	08066190	62614	133963	1999	12	130.683
+USGS	08066190	62614	133963	2000	1	131.191
+USGS	08066190	62614	133963	2000	2	131.149
+USGS	08066190	62614	133963	2000	4	131.146
+USGS	08066190	62614	133963	2000	5	131.258
+USGS	08066190	62614	133963	2000	6	131.386
+USGS	08066190	62614	133963	2000	7	130.958
+USGS	08066190	62614	133963	2000	8	130.198
+USGS	08066190	62614	133963	2000	9	129.577
+USGS	08066190	62614	133963	2000	10	129.305
+USGS	08066190	62614	133963	2000	11	131.286
+USGS	08066190	62614	133963	2000	12	131.398
+USGS	08066190	62614	133963	2001	1	131.673
+USGS	08066190	62614	133963	2001	2	131.57
+USGS	08066190	62614	133963	2001	3	131.72
+USGS	08066190	62614	133963	2001	4	131.093
+USGS	08066190	62614	133963	2001	5	131.52
+USGS	08066190	62614	133963	2001	6	131.299
+USGS	08066190	62614	133963	2001	7	131.215
+USGS	08066190	62614	133963	2001	8	130.772
+USGS	08066190	62614	133963	2001	9	131.24
+USGS	08066190	62614	133963	2001	10	131.075
+USGS	08066190	62614	133963	2001	11	130.907
+USGS	08066190	62614	133963	2001	12	131.723
+USGS	08066190	62614	133963	2002	1	131.311
+USGS	08066190	62614	133963	2002	2	131.423
+USGS	08066190	62614	133963	2002	3	131.233
+USGS	08066190	62614	133963	2002	4	131.484
+USGS	08066190	62614	133963	2002	5	131.203
+USGS	08066190	62614	133963	2002	6	131.236
+USGS	08066190	62614	133963	2002	8	131.021
+

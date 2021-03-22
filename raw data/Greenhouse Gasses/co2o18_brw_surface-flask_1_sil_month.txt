@@ -1,0 +1,369 @@
+# number_of_header_lines: 70
+# comment:  
+# comment:  ************ USE OF ESRL GMD DATA ****************
+# comment:  
+# comment: These data are made freely available to the public and the
+# comment: scientific community in the belief that their wide dissemination
+# comment: will lead to greater understanding and new scientific insights.
+# comment: The availability of these data does not constitute publication
+# comment: of the data.  NOAA relies on the ethics and integrity of the user to
+# comment: insure that ESRL receives fair credit for their work.  If the data 
+# comment: are obtained for potential use in a publication or presentation, 
+# comment: ESRL should be informed at the outset of the nature of this work.  
+# comment: If the ESRL data are essential to the work, or if an important 
+# comment: result or conclusion depends on the ESRL data, co-authorship
+# comment: may be appropriate.  This should be discussed at an early stage in
+# comment: the work.  Manuscripts using the ESRL data should be sent to ESRL
+# comment: for review before they are submitted for publication so we can
+# comment: insure that the quality and limitations of the data are accurately
+# comment: represented.
+# comment:  
+# comment: Every effort is made to produce the most accurate and precise
+# comment: measurements possible.  However, we reserve the right to make
+# comment: corrections to the data based on recalibration of standard gases
+# comment: or for other reasons deemed scientifically justified.
+# comment: 
+# comment: We are not responsible for results and conclusions based on use
+# comment: of these data without regard to this warning.
+# comment: 
+# contact_parameter: CO2O18 SIL (Individual Flasks)
+# contact_name: Bruce H Vaughn
+# contact_telephone: (303) 492-7985
+# contact_email: Bruce.Vaughn@colorado.edu
+# comment: 
+# comment:  ************ COLLABORATORS ***************
+# comment: 
+# comment: NOAA thanks the following collaborators without
+# comment: whom these measurements would not be possible.
+# comment: 
+# collaborator_name: NOAA Earth System Research Laboratory, Global
+# collaborator_name: Monitoring Division [NOAA ESRL GMD]
+# collaborator_url: http://www.esrl.noaa.gov/gmd
+# comment: 
+# comment:  ************ RECIPROCITY AGREEMENT ***************
+# comment: 
+# comment: Use of these data implies an agreement to reciprocate.
+# comment: Laboratories making similar measurements agree to make their
+# comment: own data available to the general public and to the scientific
+# comment: community in an equally complete and easily accessible form.
+# comment: Modelers are encouraged to make available to the community,
+# comment: upon request, their own tools used in the interpretation
+# comment: of the ESRL data, namely well documented model code, transport
+# comment: fields, and additional information necessary for other
+# comment: scientists to repeat the work and to run modified versions.
+# comment: Model availability includes collaborative support for new
+# comment: users of the models.
+# comment:
+# comment:  ************ DATA DESCRIPTION ***************
+# comment:
+# description_site-code: brw
+# description_project-abbr: ccg_surface
+# description_strategy-abbr: flask
+# description_analysis-constraints: flag:..%
+# description_creation-time: 2015-10-26 13:19:24
+# comment:
+# comment:  ************ DATA DOCUMENTATION ***************
+# comment:
+# comment: Please refer to the species-specific README file in the
+# comment: appropriate directory folder at ftp://aftp.cmdl.noaa.gov/data/trace_gases/.
+# comment:
+# data_fields: site year month value
+BRW 1990  2   -0.485
+BRW 1990  3   -0.380
+BRW 1990  4   -0.329
+BRW 1990  5   -0.342
+BRW 1990  6   -0.249
+BRW 1990  7   -0.119
+BRW 1990  8   -0.341
+BRW 1990  9   -0.778
+BRW 1990 10   -1.099
+BRW 1990 11   -1.128
+BRW 1990 12   -0.899
+BRW 1991  1   -0.547
+BRW 1991  2   -0.284
+BRW 1991  3   -0.077
+BRW 1991  4    0.090
+BRW 1991  5    0.134
+BRW 1991  6    0.144
+BRW 1991  7    0.055
+BRW 1991  8   -0.373
+BRW 1991  9   -0.904
+BRW 1991 10   -1.101
+BRW 1991 11   -1.005
+BRW 1991 12   -0.760
+BRW 1992  1   -0.471
+BRW 1992  2   -0.261
+BRW 1992  3   -0.063
+BRW 1992  4    0.065
+BRW 1992  5    0.061
+BRW 1992  6    0.073
+BRW 1992  7    0.063
+BRW 1992  8   -0.266
+BRW 1992  9   -0.710
+BRW 1992 10   -0.876
+BRW 1992 11   -0.802
+BRW 1992 12   -0.579
+BRW 1993  1   -0.327
+BRW 1993  2   -0.124
+BRW 1993  3    0.055
+BRW 1993  4    0.162
+BRW 1993  5    0.092
+BRW 1993  6   -0.024
+BRW 1993  7   -0.172
+BRW 1993  8   -0.576
+BRW 1993  9   -1.001
+BRW 1993 10   -1.096
+BRW 1993 11   -0.962
+BRW 1993 12   -0.753
+BRW 1994  1   -0.549
+BRW 1994  2   -0.399
+BRW 1994  3   -0.239
+BRW 1994  4   -0.084
+BRW 1994  5   -0.080
+BRW 1994  6   -0.189
+BRW 1994  7   -0.349
+BRW 1994  8   -0.720
+BRW 1994  9   -1.095
+BRW 1994 10   -1.203
+BRW 1994 11   -1.171
+BRW 1994 12   -1.080
+BRW 1995  1   -0.877
+BRW 1995  2   -0.634
+BRW 1995  3   -0.407
+BRW 1995  4   -0.241
+BRW 1995  5   -0.237
+BRW 1995  6   -0.276
+BRW 1995  7   -0.333
+BRW 1995  8   -0.629
+BRW 1995  9   -0.982
+BRW 1995 10   -1.175
+BRW 1995 11   -1.185
+BRW 1995 12   -1.068
+BRW 1996  1   -0.820
+BRW 1996  2   -0.596
+BRW 1996  3   -0.463
+BRW 1996  4   -0.391
+BRW 1996  5   -0.399
+BRW 1996  6   -0.360
+BRW 1996  7   -0.372
+BRW 1996  8   -0.737
+BRW 1996  9   -1.237
+BRW 1996 10   -1.421
+BRW 1996 11   -1.329
+BRW 1996 12   -1.108
+BRW 1997  1   -0.848
+BRW 1997  2   -0.649
+BRW 1997  3   -0.444
+BRW 1997  4   -0.326
+BRW 1997  5   -0.396
+BRW 1997  6   -0.538
+BRW 1997  7   -0.725
+BRW 1997  8   -1.067
+BRW 1997  9   -1.402
+BRW 1997 10   -1.367
+BRW 1997 11   -1.126
+BRW 1997 12   -0.852
+BRW 1998  1   -0.647
+BRW 1998  2   -0.551
+BRW 1998  3   -0.446
+BRW 1998  4   -0.351
+BRW 1998  5   -0.398
+BRW 1998  6   -0.544
+BRW 1998  7   -0.771
+BRW 1998  8   -1.185
+BRW 1998  9   -1.499
+BRW 1998 10   -1.462
+BRW 1998 11   -1.276
+BRW 1998 12   -1.111
+BRW 1999  1   -0.947
+BRW 1999  2   -0.749
+BRW 1999  3   -0.478
+BRW 1999  4   -0.284
+BRW 1999  5   -0.328
+BRW 1999  6   -0.427
+BRW 1999  7   -0.504
+BRW 1999  8   -0.782
+BRW 1999  9   -1.122
+BRW 1999 10   -1.242
+BRW 1999 11   -1.217
+BRW 1999 12   -1.080
+BRW 2000  1   -0.821
+BRW 2000  2   -0.563
+BRW 2000  3   -0.388
+BRW 2000  4   -0.315
+BRW 2000  5   -0.390
+BRW 2000  6   -0.447
+BRW 2000  7   -0.519
+BRW 2000  8   -0.851
+BRW 2000  9   -1.187
+BRW 2000 10   -1.227
+BRW 2000 11   -1.015
+BRW 2000 12   -0.786
+BRW 2001  1   -0.586
+BRW 2001  2   -0.480
+BRW 2001  3   -0.380
+BRW 2001  4   -0.259
+BRW 2001  5   -0.240
+BRW 2001  6   -0.252
+BRW 2001  7   -0.330
+BRW 2001  8   -0.657
+BRW 2001  9   -0.997
+BRW 2001 10   -1.105
+BRW 2001 11   -1.018
+BRW 2001 12   -0.848
+BRW 2002  1   -0.626
+BRW 2002  2   -0.450
+BRW 2002  3   -0.280
+BRW 2002  4   -0.105
+BRW 2002  5   -0.038
+BRW 2002  6   -0.050
+BRW 2002  7   -0.242
+BRW 2002  8   -0.763
+BRW 2002  9   -1.215
+BRW 2002 10   -1.173
+BRW 2002 11   -0.878
+BRW 2002 12   -0.612
+BRW 2003  1   -0.488
+BRW 2003  2   -0.446
+BRW 2003  3   -0.306
+BRW 2003  4   -0.110
+BRW 2003  5   -0.047
+BRW 2003  6   -0.054
+BRW 2003  7   -0.161
+BRW 2003  8   -0.499
+BRW 2003  9   -0.935
+BRW 2003 10   -1.107
+BRW 2003 11   -1.073
+BRW 2003 12   -0.931
+BRW 2004  1   -0.699
+BRW 2004  2   -0.484
+BRW 2004  3   -0.249
+BRW 2004  4   -0.079
+BRW 2004  5   -0.085
+BRW 2004  6   -0.141
+BRW 2004  7   -0.250
+BRW 2004  8   -0.621
+BRW 2004  9   -1.012
+BRW 2004 10   -1.091
+BRW 2004 11   -0.971
+BRW 2004 12   -0.771
+BRW 2005  1   -0.528
+BRW 2005  2   -0.326
+BRW 2005  3   -0.173
+BRW 2005  4   -0.067
+BRW 2005  5   -0.079
+BRW 2005  6   -0.147
+BRW 2005  7   -0.326
+BRW 2005  8   -0.854
+BRW 2005  9   -1.377
+BRW 2005 10   -1.412
+BRW 2005 11   -1.131
+BRW 2005 12   -0.852
+BRW 2006  1   -0.615
+BRW 2006  2   -0.459
+BRW 2006  3   -0.323
+BRW 2006  4   -0.226
+BRW 2006  5   -0.284
+BRW 2006  6   -0.395
+BRW 2006  7   -0.569
+BRW 2006  8   -1.006
+BRW 2006  9   -1.419
+BRW 2006 10   -1.509
+BRW 2006 11   -1.292
+BRW 2006 12   -1.009
+BRW 2007  1   -0.718
+BRW 2007  2   -0.534
+BRW 2007  3   -0.406
+BRW 2007  4   -0.290
+BRW 2007  5   -0.288
+BRW 2007  6   -0.313
+BRW 2007  7   -0.414
+BRW 2007  8   -0.768
+BRW 2007  9   -1.093
+BRW 2007 10   -1.107
+BRW 2007 11   -0.911
+BRW 2007 12   -0.743
+BRW 2008  1   -0.639
+BRW 2008  2   -0.574
+BRW 2008  3   -0.439
+BRW 2008  4   -0.313
+BRW 2008  5   -0.326
+BRW 2008  6   -0.342
+BRW 2008  7   -0.360
+BRW 2008  8   -0.601
+BRW 2008  9   -1.015
+BRW 2008 10   -1.263
+BRW 2008 11   -1.304
+BRW 2008 12   -1.177
+BRW 2009  1   -0.919
+BRW 2009  2   -0.696
+BRW 2009  3   -0.471
+BRW 2009  4   -0.293
+BRW 2009  5   -0.273
+BRW 2009  6   -0.342
+BRW 2009  7   -0.519
+BRW 2009  8   -0.942
+BRW 2009  9   -1.303
+BRW 2009 10   -1.306
+BRW 2009 11   -1.134
+BRW 2009 12   -0.972
+BRW 2010  1   -0.844
+BRW 2010  2   -0.726
+BRW 2010  3   -0.545
+BRW 2010  4   -0.390
+BRW 2010  5   -0.477
+BRW 2010  6   -0.715
+BRW 2010  7   -0.976
+BRW 2010  8   -1.351
+BRW 2010  9   -1.579
+BRW 2010 10   -1.508
+BRW 2010 11   -1.358
+BRW 2010 12   -1.233
+BRW 2011  1   -1.023
+BRW 2011  2   -0.761
+BRW 2011  3   -0.539
+BRW 2011  4   -0.417
+BRW 2011  5   -0.465
+BRW 2011  6   -0.526
+BRW 2011  7   -0.587
+BRW 2011  8   -0.904
+BRW 2011  9   -1.304
+BRW 2011 10   -1.429
+BRW 2011 11   -1.342
+BRW 2011 12   -1.160
+BRW 2012  1   -0.876
+BRW 2012  2   -0.627
+BRW 2012  3   -0.477
+BRW 2012  4   -0.434
+BRW 2012  5   -0.520
+BRW 2012  6   -0.517
+BRW 2012  7   -0.435
+BRW 2012  8   -0.582
+BRW 2012  9   -0.862
+BRW 2012 10   -1.040
+BRW 2012 11   -1.066
+BRW 2012 12   -0.966
+BRW 2013  1   -0.750
+BRW 2013  2   -0.546
+BRW 2013  3   -0.370
+BRW 2013  4   -0.294
+BRW 2013  5   -0.405
+BRW 2013  6   -0.477
+BRW 2013  7   -0.474
+BRW 2013  8   -0.689
+BRW 2013  9   -1.095
+BRW 2013 10   -1.342
+BRW 2013 11   -1.358
+BRW 2013 12   -1.182
+BRW 2014  1   -0.903
+BRW 2014  2   -0.700
+BRW 2014  3   -0.508
+BRW 2014  4   -0.356
+BRW 2014  5   -0.338
+BRW 2014  6   -0.367
+BRW 2014  7   -0.469
+BRW 2014  8   -0.774
+BRW 2014  9   -1.133
+BRW 2014 10   -1.210
+BRW 2014 11   -1.116
+BRW 2014 12   -0.967

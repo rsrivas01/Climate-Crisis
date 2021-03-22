@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script><script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.css" rel="stylesheet"></link>
+    <title>Climate Crisis Dashboard - Temps</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="dist/css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="../index.html">Climate Crisis</a>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">
+              <span data-feather="home"></span>
+              Dashboard Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="temps.html">
+              <span data-feather="thermometer"></span>
+              Temperature
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="storms.html">
+              <span data-feather="cloud-lightning"></span>
+              Storms
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rivers.html">
+              <span data-feather="chevrons-right"></span>
+              Rivers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lakes.html">
+              <span data-feather="droplet"></span>
+              Lakes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="greenhouse_gases.html">
+              <span data-feather="wind"></span>
+              Greenhouse Gases
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <form>
+              <select id="slim-select" class="info__select" onchange="updateMain(this.value, this.label)">
+                <option data-placeholder="true"></option>
+                <option value="charts/temps/BWS_Fig.png" label="BARROW WEATHER SERVICE OFFICE AIRPORT, AK US">BARROW WEATHER SERVICE OFFICE AIRPORT, AK US</option>
+                <option value="charts/temps/Corpus_Christi_Fig.png" label="CORPUS CHRISTI INTERNATIONAL AIRPORT, TX US">CORPUS CHRISTI INTERNATIONAL AIRPORT, TX US</option>
+                <option value="charts/temps/Dallas_Fig.png" label="DALLAS FAA AIRPORT, TX US">DALLAS FAA AIRPORT, TX US</option>                       
+                <option value="charts/temps/Detroit_Fig.png" label="DETROIT METRO AIRPORT, MI US">DETROIT METRO AIRPORT, MI US</option>
+                <option value="charts/temps/El_Paso_Fig.png" label="EL PASO INTERNATIONAL AIRPORT, TX US">EL PASO INTERNATIONAL AIRPORT, TX US</option>
+                <option value="charts/temps/Honolulu_Fig.png" label="HONOLULU INTERNATIONAL AIRPORT, HI US">HONOLULU INTERNATIONAL AIRPORT, HI US</option>
+                <option value="charts/temps/Los_Angeles_Fig.png" label="LOS ANGELES INTERNATIONAL AIRPORT, CA US">LOS ANGELES INTERNATIONAL AIRPORT, CA US</option>
+                <option value="charts/temps/Milwaukee_Fig.png" label="MILWAUKEE MITCHELL INTERNATIONAL AIRPORT, WI US">MILWAUKEE MITCHELL INTERNATIONAL AIRPORT, WI US</option>
+                <option value="charts/temps/Minneapolis_Fig.png" label="MINNEAPOLIS ST PAUL INTERNATIONAL AIRPORT, MN US">MINNEAPOLIS ST PAUL INTERNATIONAL AIRPORT, MN US</option>
+                <option value="charts/temps/Portland_Fig.png" label="PORTLAND JETPORT, ME US">PORTLAND JETPORT, ME US</option>
+                <option value="charts/temps/Salt_Lake_City_Fig.png" label="SALT LAKE CITY INTERNATIONAL AIRPORT, UT US">SALT LAKE CITY INTERNATIONAL AIRPORT, UT US</option>
+                <option value="charts/temps/Seattle_Fig.png" label="SEATTLE TACOMA INTERNATIONAL AIRPORT, WA US">SEATTLE TACOMA INTERNATIONAL AIRPORT, WA US</option>
+                <option value="charts/temps/St_Louis_Fig.png" label="ST LOUIS LAMBERT INTERNATIONAL AIRPORT, MO US">ST LOUIS LAMBERT INTERNATIONAL AIRPORT, MO US</option>
+                <option value="charts/temps/Tampa_Fig.png" label="TAMPA INTERNATIONAL AIRPORT, FL US">TAMPA INTERNATIONAL AIRPORT, FL US</option>
+              </select>
+            </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md"><center></center>
+          <a id="mainLink" href="charts/temps/BWS_Fig.png">
+          <img id="mainChart" src="charts/temps/BWS_Fig.png"  alt="BARROW WEATHER SERVICE OFFICE AIRPORT, AK US" class="rounded float-right" style="width:100%">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+          While it seems incredibly difficult to pull any information from the charts when using daily data over seven decades, once a yearly rolling mean is plotted, it’s a bit easier to see where the variability lies in the time series. Looking between the different sites, it looks as though warmer and coastal climates show a steady (if not relatively small) increase over the 70-year period. As expected, warmer climates averages tend to cluster more at higher temperatures with sharp spikes downward during the winter. A great example of this is the Tampa site. There seems to be more yearly variability in the colder climates, which is to be expected as they have a large range in temperatures yearly. It is interesting to note, however, that these coldest sites’ temperatures show their averages most central between their peaks of heat and cold. Almost all charts showed stronger variability in a period between 2011 and 2015; while this may be a sign of increased climate-change across the US, much more analysis would be required to make such a claim.
+        </div>
+      </div>
+
+      <h2>Individual Station Charts</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4"><center>BARROW WEATHER SERVICE OFFICE AIRPORT, AK US</center>
+            <img src="charts/temps/BWS_Fig.png" alt="BARROW WEATHER SERVICE OFFICE AIRPORT, AK US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4"><center>CORPUS CHRISTI INTERNATIONAL AIRPORT, TX US</center>
+            <img src="charts/temps/Corpus_Christi_Fig.png" alt="CORPUS CHRISTI INTERNATIONAL AIRPORT, TX US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4"><center>DALLAS FAA AIRPORT, TX US</center>
+            <img src="charts/temps/Dallas_Fig.png" alt="DALLAS FAA AIRPORT, TX US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"><center>DETROIT METRO AIRPORT, MI US</center>
+            <img src="charts/temps/Detroit_Fig.png" alt="DETROIT METRO AIRPORT, MI US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4"><center>EL PASO INTERNATIONAL AIRPORT, TX US</center>
+            <img src="charts/temps/El_Paso_Fig.png" alt="EL PASO INTERNATIONAL AIRPORT, TX US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4"><center>HONOLULU INTERNATIONAL AIRPORT, HI US</center>
+            <img src="charts/temps/Honolulu_Fig.png" alt="HONOLULU INTERNATIONAL AIRPORT, HI US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-md-4"><center>LOS ANGELES INTERNATIONAL AIRPORT, CA US</center>
+              <img src="charts/temps/Los_Angeles_Fig.png" alt="LOS ANGELES INTERNATIONAL AIRPORT, CA US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4"><center>MILWAUKEE MITCHELL INTERNATIONAL AIRPORT, WI US</center>
+              <img src="charts/temps/Milwaukee_Fig.png" alt="MILWAUKEE MITCHELL INTERNATIONAL AIRPORT, WI US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4"><center>MINNEAPOLIS ST PAUL INTERNATIONAL AIRPORT, MN US</center>
+              <img src="charts/temps/Minneapolis_Fig.png" alt="MINNEAPOLIS ST PAUL INTERNATIONAL AIRPORT, MN US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4"><center>PORTLAND JETPORT, ME US</center>
+              <img src="charts/temps/Portland_Fig.png" alt="PORTLAND JETPORT, ME US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4"><center>SALT LAKE CITY INTERNATIONAL AIRPORT, UT US</center>
+              <img src="charts/temps/Salt_Lake_City_Fig.png" alt="SALT LAKE CITY INTERNATIONAL AIRPORT, UT US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4"><center>SEATTLE TACOMA INTERNATIONAL AIRPORT, WA US</center>
+              <img src="charts/temps/Seattle_Fig.png" alt="SEATTLE TACOMA INTERNATIONAL AIRPORT, WA US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4"><center>ST LOUIS LAMBERT INTERNATIONAL AIRPORT, MO US</center>
+              <img src="charts/temps/St_Louis_Fig.png" alt="ST LOUIS LAMBERT INTERNATIONAL AIRPORT, MO US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4"><center>TAMPA INTERNATIONAL AIRPORT, FL US</center>
+              <img src="charts/temps/Tampa_Fig.png" alt="TAMPA INTERNATIONAL AIRPORT, FL US" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4"><center></center>
+              <img src="" alt="" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+        <script src="dist/js/dashboard.js"></script></body>
+</html>

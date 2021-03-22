@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.slim.min.js"><\/script>')</script><script src="dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.26.0/slimselect.min.css" rel="stylesheet"></link>
+    <title>Climate Crisis Dashboard - Lakes</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+
+    <!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="dist/css/dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="../index.html">Climate Crisis</a>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">
+              <span data-feather="home"></span>
+              Dashboard Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="temps.html">
+              <span data-feather="thermometer"></span>
+              Temperature
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="storms.html">
+              <span data-feather="cloud-lightning"></span>
+              Storms
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rivers.html">
+              <span data-feather="chevrons-right"></span>
+              Rivers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lakes.html">
+              <span data-feather="droplet"></span>
+              Lakes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="greenhouse_gases.html">
+              <span data-feather="wind"></span>
+              Greenhouse Gases
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0">
+          <form>
+            <select id="slim-select" class="info__select" onchange="updateMain(this.value, this.label)">
+              <option data-placeholder="true"></option>
+              <option value="charts/lakes/Lakes_Fig.png">All Lakes</option>
+              <option value="charts/lakes/Belton_Fig.png">Belton Lake</option>
+              <option value="charts/lakes/Canyon_Fig.png">Canyon Lake</option>                       
+              <option value="charts/lakes/Cedar_Creek_Fig.png">Cedar Creek Reservoir</option>
+              <option value="charts/lakes/Choke_Canyon_Fig.png">Choke Canyon Reservoir</option>
+              <option value="charts/lakes/Conroe_Fig.png">Lake Conroe</option>
+              <option value="charts/lakes/Fork_Fig.png">Lake Fork Reservoir</option>
+              <option value="charts/lakes/Ivie_Fig.png">O.H. Ivie Reservoir</option>
+              <option value="charts/lakes/Lavon_Fig.png">Lavon Lake</option>
+              <option value="charts/lakes/Lewisville_Fig.png">Lewisville Lake</option>
+              <option value="charts/lakes/Livingston_Fig.png">Livingston Reservoir</option>
+              <option value="charts/lakes/Meredith_Fig.png">Lake Meredith</option>
+              <option value="charts/lakes/Palestine_Fig.png">Lake Palestine</option>
+              <option value="charts/lakes/Possum_Kingdom_Fig.png">Possum Kingdom Lake</option>
+              <option value="charts/lakes/Ray_Hubbard_Fig.png">Lake Ray Hubbard</option>
+              <option value="charts/lakes/Richland_Chambers_Fig.png">Richland-Chambers Reservoir</option>
+              <option value="charts/lakes/Sam_Rayburn_Fig.png">Sam Rayburn Reservoir</option>
+              <option value="charts/lakes/Tawakoni_Fig.png">Lake Tawakoni</option>
+              <option value="charts/lakes/Toledo_Bend_Fig.png">Toledo Bend Reservoir</option>
+              <option value="charts/lakes/Whitney_Fig.png">Whitney Lake</option>
+            </select>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md"><center></center>
+          <a id="mainLink" href="charts/lakes/Lakes_Fig.png">
+          <img id="mainChart" src="charts/lakes/Lakes_Fig.png"  alt="Comprehensive Lake Chart" class="rounded float-right" style="width:100%">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md">
+          The metric used in the dataset for the lakes graphs was Water Surface Elevation above the National Geodetic Vertical Datum in feet. In layman’s terms, this is similar to ‘above sea level’ in that it is a constant measure that can be used to normalize data from across large areas. The combined all lakes chart seems incredibly consistent, but this is due to the large range of scale along the y-axis. When looking at the individual graphs, it is clear to see that there is quite a bit of variability. The combined graph does show us areas such as 2015 and late 2015 where multiple lakes show mumps in surface elevation at the same time, possibly suggesting large scale changes to rainfall or flooding. It is also important to note that since most lakes in Texas are human-made, there are dams all over the place which hold or release water based on human interaction. Still, we can see some consistent trends between many of these lakes, especially when reviewing the yearly rolling mean over monthly measurements. For instance, many lakes show sudden drops in elevation around 2007 and the mid 2010’s. With the exception of a few lakes, the last five years have been a period of either water level rise, or water level consistency at higher elevations. This may suggest periods of drought around 2015, followed by a long period of consistent, heavier rainfall. Since Texas is a coastal state near the Gulf of Mexico, this data may also be heavily influenced by Hurricane and Tropical Storm activity as well.
+        </div>
+      </div>
+
+      <h2>Individual Lake Charts</h2>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4" id="thumbnail"><center>Belton Lake</center>
+            <img src="charts/lakes/Belton_Fig.png" alt="Belton Lake Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4" id="thumbnail"><center>Canyon Lake</center>
+            <img src="charts/lakes/Canyon_Fig.png" alt="Canyon Lake Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4" id="thumbnail"><center>Cedar Creek Reservoir</center>
+            <img src="charts/lakes/Cedar_Creek_Fig.png" alt=">Cedar Creek Reservoir Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4" id="thumbnail"><center>Choke Canyon Reservoir</center>
+            <img src="charts/lakes/Choke_Canyon_Fig.png" alt="Choke Canyon Reservoir Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4" id="thumbnail"><center>Lake Conroe</center>
+            <img src="charts/lakes/Conroe_Fig.png" alt="Lake Conroe Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+          <div class="col-md-4" id="thumbnail"><center>Lake Fork Reservoir</center>
+            <img src="charts/lakes/Fork_Fig.png" alt="Lake Fork Reservoir Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col-md-4" id="thumbnail"><center>O.H. Ivie Reservoir</center>
+              <img src="charts/lakes/Ivie_Fig.png" alt="O.H. Ivie Reservoir Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Lavon Lake</center>
+              <img src="charts/lakes/Lavon_Fig.png" alt="Lavon Lake Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Lewisville Lake</center>
+              <img src="charts/lakes/Lewisville_Fig.png" alt="Lewisville Lake Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4" id="thumbnail"><center>Livingston Reservoir</center>
+              <img src="charts/lakes/Livingston_Fig.png" alt="Livingston Reservoir Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Lake Meredith</center>
+              <img src="charts/lakes/Meredith_Fig.png" alt="Lake Meredith Chart" onclick= "updateMain(src,alt)" lass="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Lake Palestine</center>
+              <img src="charts/lakes/Palestine_Fig.png" alt="Lake Palestine Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4" id="thumbnail"><center>Possum Kingdom Lake</center>
+              <img src="charts/lakes/Possum_Kingdom_Fig.png" alt="Possum Kingdom Lake Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Lake Ray Hubbard</center>
+              <img src="charts/lakes/Ray_Hubbard_Fig.png" alt="Lake Ray Hubbard Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Richland-Chambers Reservoir</center>
+              <img src="charts/lakes/Richland_Chambers_Fig.png" alt="Richard-Chambers Reservoir Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-4" id="thumbnail"><center>Sam Rayburn Reservoir</center>
+              <img src="charts/lakes/Sam_Rayburn_Fig.png" alt="Sam Rayburn Reservoir Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Lake Tawakoni</center>
+              <img src="charts/lakes/Tawakoni_Fig.png" alt="Lake Tawakoni Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center>Toledo Bend Reservoir</center>
+              <img src="charts/lakes/Toledo_Bend_Fig.png" alt="Toledo Bend Reservoir Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4" id="thumbnail"><center>Whitney Lake Chart</center>
+              <img src="charts/lakes/Whitney_Fig.png" alt="Whitney Lake Chart" onclick= "updateMain(src,alt)" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center></center>
+              <img src="" alt="" class="rounded float-right" style="width:100%">
+            </div>
+            <div class="col-md-4" id="thumbnail"><center></center>
+              <img src="" alt="" class="rounded float-right" style="width:100%">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+        <script src="dist/js/dashboard.js"></script></body>
+</html>
